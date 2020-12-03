@@ -1,6 +1,5 @@
 #imports
 import time
-import math
 #imports
 
 #defs
@@ -11,7 +10,7 @@ def progress_bar(done):
 def loading():
     for n in range(101):
         progress_bar(n/100)
-        time.sleep(0.002)
+        time.sleep(0.001)
     #loading
 #defs
 
@@ -20,8 +19,6 @@ print('-'*50)
 print('[ 1 ] Somar')
 print('[ 2 ] Multiplicação')
 print('[ 3 ] Divisão')
-print('[ 4 ] Esponenciação')
-print('[ 5 ] Raiz Quadrada')
 print('[ 0 ] Sair do menu')
 print('-'*50)
 #print-calculos
@@ -60,6 +57,29 @@ if r1 == 2:
         loading()
         print(f'\nA multiplicação da {mult1}')
     #num3
+#multiplicação
+
+#divisão
+if r1 == 3:
+    r1r3 = int(input('Com quantos numeros você vai querer fazer a divisão?: '))
+    #num2
+    if r1r3 == 2:
+        num1d = float(input('Qual o primeiro numero: '))
+        num2d = float(input('Qual o segundo numero: '))
+        divisao = num1d/num2d
+        loading()
+        print(f'\nA multiplicação da {divisao}')
+    #num2
+
+    #num3
+    if r1r3 == 3:
+        num1d = float(input('Qual o primeiro numero: '))
+        num2d = float(input('Qual o segundo numero: '))
+        num3d = float(input('Qual o terceiro numero: '))
+        divisao = num1d/num2d/num3d
+        loading()
+        print(f'\nA multiplicação da {divisao}')
+    #num3
+#divisão
 if r1 == 0:
     pass
-#multiplicação
