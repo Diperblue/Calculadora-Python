@@ -7,10 +7,10 @@ import math
 def progress_bar(done):
     print("\rCarregando: [{0:50s}] {1:.1f}%".format('#' * int(done * 50), done * 100),end='')
 
-def test():
+def loading():
     for n in range(101):
         progress_bar(n/100)
-        time.sleep(0.009)
+        time.sleep(0.007)
 #progress_bar
 
 #variaveis-soma
@@ -32,16 +32,16 @@ print('-'*50)
 #print-calculos
 
 #pergunta
-r1 = int(input(print('Qual conta você quer fazer?: ')))
+r1 = int(input('Qual conta você quer fazer?: '))
 #pergunta
 
 #soma-2num
 if r1 == 1:
-    r1r1 = int(input(print('Qual a quantidade de numeros: ')))
+    r1r1 = int(input('Qual a quantidade de numeros: '))
     if r1r1 == 2:
-        num21s = int(input(print('Qual o primeiro numero: ')))
-        num22s = int(input(print('Qual o segundo numero: ')))
+        num21s = int(input('Qual o primeiro numero: '))
+        num22s = int(input('Qual o segundo numero: '))
         soma21 = num21s + num22s
-        test()
+        loading()
         print(f'\nA soma entre {num21s} e {num22s} e {soma21}')
 #soma-2num
