@@ -1,2 +1,2 @@
 # Calculadora-Python
- Uma calculadora no python.
+ Uma calculadora feita em python3.
