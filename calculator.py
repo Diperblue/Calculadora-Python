@@ -3,7 +3,8 @@ import time
 import math
 #imports
 
-#progress_bar
+#defs
+    #loading
 def progress_bar(done):
     print("\rCarregando: [{0:50s}] {1:.1f}%".format('#' * int(done * 50), done * 100),end='')
 
@@ -11,15 +12,8 @@ def loading():
     for n in range(101):
         progress_bar(n/100)
         time.sleep(0.007)
-#progress_bar
-
-#variaveis-soma
-soma = 1
-multiplicação = 2
-divisão = 3
-esponenciação = 4
-raizquadrada = 5
-#variaveis-soma
+    #loading
+#defs
 
 #print-calculos
 print('-'*50)
@@ -28,6 +22,7 @@ print('[ 2 ] Multiplicação')
 print('[ 3 ] Divisão')
 print('[ 4 ] Esponenciação')
 print('[ 5 ] Raiz Quadrada')
+print('[ 0 ] Sair do menu')
 print('-'*50)
 #print-calculos
 
@@ -45,3 +40,5 @@ if r1 == 1:
         loading()
         print(f'\nA soma entre {num21s} e {num22s} e {soma21}')
 #soma-2num
+if r1 == 0:
+    pass
