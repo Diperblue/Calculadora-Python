@@ -1,6 +1,5 @@
 #imports
 import time
-import math
 #imports
 
 #defs
@@ -11,7 +10,7 @@ def progress_bar(done):
 def loading():
     for n in range(101):
         progress_bar(n/100)
-        time.sleep(0.002)
+        time.sleep(0.001)
     #loading
 #defs
 
@@ -20,8 +19,6 @@ print('-'*50)
 print('[ 1 ] Somar')
 print('[ 2 ] Multiplicação')
 print('[ 3 ] Divisão')
-print('[ 4 ] Esponenciação')
-print('[ 5 ] Raiz Quadrada')
 print('[ 0 ] Sair do menu')
 print('-'*50)
 #print-calculos
