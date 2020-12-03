@@ -30,16 +30,17 @@ print('-'*50)
 r1 = int(input('Qual conta você quer fazer?: '))
 #pergunta
 
-#soma-num
+#soma
 if r1 == 1:
     num1s = float(input('Qual o primeiro numero: '))
     num2s = float(input('Qual o segundo numero: '))
     soma1 = num1s + num2s
     loading()
     print(f'\nA soma entre {num1s} e {num2s} e {soma1}')
-#soma-num
+#soma
 
-#
+#multiplicação
+    #num2
 if r1 == 2:
     r1r2 = int(input('Quantos numeros para a multiplicação: '))
     if r1r2 == 2:
@@ -48,6 +49,9 @@ if r1 == 2:
         mult1 = num1m * num2m
         loading()
         print(f'\nA multiplicação entre {num1m} e {num2m} e {mult1}')
+    #num2
+
+    #num3
     if r1r2 == 3:
         num1m = float(input('Qual o primeiro numero: '))
         num2m = float(input('Qual o segundo numero: '))
@@ -55,5 +59,7 @@ if r1 == 2:
         mult1 = num1m * num2m * num3m
         loading()
         print(f'\nA multiplicação da {mult1}')
+    #num3
 if r1 == 0:
     pass
+#multiplicação
