@@ -13,14 +13,6 @@ def test():
         time.sleep(0.009)
 #progress_bar
 
-#variaveis-soma
-soma = 1
-multiplicação = 2
-divisão = 3
-esponenciação = 4
-raizquadrada = 5
-#variaveis-soma
-
 #print-calculos
 print('-'*50)
 print('[ 1 ] Somar')
@@ -32,13 +24,13 @@ print('-'*50)
 #print-calculos
 
 #pergunta
-r1 = int(input(print('Qual conta você quer fazer?: ')))
+sr1 = int(input(print('Qual conta você quer fazer?: ')))
 #pergunta
 
 #soma-2num
-if r1 == 1:
-    r1r1 = int(input(print('Qual a quantidade de numeros: ')))
-    if r1r1 == 2:
+if sr1 == 1:
+    sr2 = int(input(print('Qual a quantidade de numeros: ')))
+    if sr2 == 2:
         num21s = int(input(print('Qual o primeiro numero: ')))
         num22s = int(input(print('Qual o segundo numero: ')))
         soma21 = num21s + num22s
