@@ -1,4 +1,3 @@
-
 #imports
 import time
 import math
@@ -23,7 +22,6 @@ raizquadrada = 5
 #variaveis-soma
 
 #print-calculos
-
 print('-'*50)
 print('[ 1 ] Somar')
 print('[ 2 ] Multiplicação')
@@ -31,7 +29,6 @@ print('[ 3 ] Divisão')
 print('[ 4 ] Esponenciação')
 print('[ 5 ] Raiz Quadrada')
 print('-'*50)
-
 #print-calculos
 
 #pergunta
