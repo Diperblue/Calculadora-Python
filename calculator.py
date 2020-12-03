@@ -11,7 +11,7 @@ def progress_bar(done):
 def loading():
     for n in range(101):
         progress_bar(n/100)
-        time.sleep(0.007)
+        time.sleep(0.006)
     #loading
 #defs
 
@@ -30,7 +30,7 @@ print('-'*50)
 r1 = int(input('Qual conta você quer fazer?: '))
 #pergunta
 
-#soma-2num
+#soma-num
 if r1 == 1:
     r1r1 = int(input('Qual a quantidade de numeros: '))
     if r1r1 == 2:
@@ -39,6 +39,6 @@ if r1 == 1:
         soma21 = num21s + num22s
         loading()
         print(f'\nA soma entre {num21s} e {num22s} e {soma21}')
-#soma-2num
+#soma-num
 if r1 == 0:
     pass
