@@ -60,6 +60,11 @@ if r1 == 2:
         loading()
         print(f'\nA multiplicação da {mult1}')
     #num3
+    else:
+        print('Por favor coloque um numero entre 0 e 4!')
+
 if r1 == 0:
     pass
+else:
+    print('Por favor coloque um numero valido!')
 #multiplicação
