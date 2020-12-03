@@ -11,7 +11,7 @@ def progress_bar(done):
 def loading():
     for n in range(101):
         progress_bar(n/100)
-        time.sleep(0.006)
+        time.sleep(0.002)
     #loading
 #defs
 
@@ -32,13 +32,28 @@ r1 = int(input('Qual conta você quer fazer?: '))
 
 #soma-num
 if r1 == 1:
-    r1r1 = int(input('Qual a quantidade de numeros: '))
-    if r1r1 == 2:
-        num21s = int(input('Qual o primeiro numero: '))
-        num22s = int(input('Qual o segundo numero: '))
-        soma21 = num21s + num22s
-        loading()
-        print(f'\nA soma entre {num21s} e {num22s} e {soma21}')
+    num1s = float(input('Qual o primeiro numero: '))
+    num2s = float(input('Qual o segundo numero: '))
+    soma1 = num1s + num2s
+    loading()
+    print(f'\nA soma entre {num1s} e {num2s} e {soma1}')
 #soma-num
+
+#
+if r1 == 2:
+    r1r2 = int(input('Quantos numeros para a multiplicação: '))
+    if r1r2 == 2:
+        num1m = float(input('Qual o primeiro numero: '))
+        num2m = float(input('Qual o segundo numero: '))
+        mult1 = num1m * num2m
+        loading()
+        print(f'\nA multiplicação entre {num1m} e {num2m} e {mult1}')
+    if r1r2 == 3:
+        num1m = float(input('Qual o primeiro numero: '))
+        num2m = float(input('Qual o segundo numero: '))
+        num3m = float(input('Qual o terceiro numero: '))
+        mult1 = num1m * num2m * num3m
+        loading()
+        print(f'\nA multiplicação da {mult1}')
 if r1 == 0:
     pass
