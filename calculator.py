@@ -10,7 +10,7 @@ def progress_bar(done):
 def test():
     for n in range(101):
         progress_bar(n/100)
-        time.sleep(0.01)
+        time.sleep(0.009)
 #progress_bar
 
 #variaveis-soma
