@@ -22,15 +22,16 @@ print('[ 2 ] Multiplicação')
 print('[ 3 ] Divisão')
 print('[ 4 ] Esponenciação')
 print('[ 5 ] Raiz Quadrada')
+print('[ 0 ] Sair do menu')
 print('-'*50)
 #print-calculos
 
 #pergunta-calculo
-sr1 = int(input(print('Qual calculo você vai querer efetuar?: ')))
+r1 = int(input(print('Qual calculo você vai querer efetuar?: ')))
 #pergunta-calculo
 
 #soma-2num
-if sr1 == 1:
+if r1 == 1:
     sr2 = int(input(print('Qual a quantidade de numeros: ')))
     if sr2 == 2:
         num21s = int(input(print('Qual o primeiro numero: ')))
@@ -39,3 +40,5 @@ if sr1 == 1:
         test()
         print(f'\nA soma entre {num21s} e {num22s} e {soma21}')
 #soma-2num
+if r1 == 0:
+    pass
