@@ -1,3 +1,19 @@
+
+#imports
+import time
+import math
+#imports
+
+#progress_bar
+def progress_bar(done):
+    print("\rCarregando: [{0:50s}] {1:.1f}%".format('#' * int(done * 50), done * 100),end='')
+
+def test():
+    for n in range(101):
+        progress_bar(n/100)
+        time.sleep(0.01)
+#progress_bar
+
 #variaveis-soma
 soma = 1
 multiplicação = 2
@@ -29,5 +45,6 @@ if r1 == 1:
         num21s = int(input(print('Qual o primeiro numero: ')))
         num22s = int(input(print('Qual o segundo numero: ')))
         soma21 = num21s + num22s
-        print(f'A soma entre {num21s} e {num22s} e {soma21}')
+        test()
+        print(f'\nA soma entre {num21s} e {num22s} e {soma21}')
 #soma-2num
