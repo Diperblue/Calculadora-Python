@@ -24,7 +24,12 @@ print('-'*50)
 #print-calculos
 
 #pergunta
-r1 = int(input('Qual conta você quer fazer?: '))
+while True:
+    r1 = int(input('Digite o numero do calculo que você vai querer fazer: '))
+    if r1 != int:
+        r1 = int(input('Digite um numero valido dependendo do calculo que você vai querer executar: '))
+    else:
+        break
 #pergunta
 
 #soma
@@ -57,8 +62,7 @@ if r1 == 2:
         loading()
         print(f'\nA multiplicação da {mult1}')
     #num3
-else:
-    print('Por favor coloque um numero entre 1 e 4!!')
+
 #mulplicação
 
 #divisão
@@ -83,11 +87,7 @@ if r1 == 3:
         print(f'\nA multiplicação da {divisao}')
     #num3
 #divisão
-else:
-    print('Por favor coloque um numero entre 1 e 4')
 
 if r1 == 0:
     pass
-else:
-    print('Por favor coloque um numero valido!')
 #multiplicação
