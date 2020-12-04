@@ -57,8 +57,34 @@ if r1 == 2:
         loading()
         print(f'\nA multiplicação da {mult1}')
     #num3
-    else:
-        print('Por favor coloque um numero entre 0 e 4!')
+else:
+    print('Por favor coloque um numero entre 1 e 4!!')
+#mulplicação
+
+#divisão
+if r1 == 3:
+    r1r3 = int(input('Com quantos numeros você vai querer fazer a divisão?: '))
+    #num2
+    if r1r3 == 2:
+        num1d = float(input('Qual o primeiro numero: '))
+        num2d = float(input('Qual o segundo numero: '))
+        divisao = num1d/num2d
+        loading()
+        print(f'\nA multiplicação da {divisao}')
+    #num2
+
+    #num3
+    if r1r3 == 3:
+        num1d = float(input('Qual o primeiro numero: '))
+        num2d = float(input('Qual o segundo numero: '))
+        num3d = float(input('Qual o terceiro numero: '))
+        divisao = num1d/num2d/num3d
+        loading()
+        print(f'\nA multiplicação da {divisao}')
+    #num3
+#divisão
+else:
+    print('Por favor coloque um numero entre 1 e 4')
 
 if r1 == 0:
     pass
